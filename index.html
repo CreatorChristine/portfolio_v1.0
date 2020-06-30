@@ -1,0 +1,73 @@
+---
+layout: default
+title: CreatorChristine
+---
+<div class="page page-1">
+  <div class="banner d-flex align-items-center justify-content-center flex-column">
+    <!-- <img src="https://res.cloudinary.com/demyxeys9/image/upload/v1593502347/portfolio/kelly-sikkema-mdADGzyXCVE-unsplash_ivylim.jpg" alt="banner"> -->
+  
+    <!-- <div class="basic-info"> -->
+      <div id="name" class="row">
+        <h2>Christine</h2>
+        <h2>Rhee</h2>
+      </div>
+    
+      <div id="description">
+        <h6>{{ "Full-Stack Developer" | upcase }}</h6>
+      </div>
+
+      <!-- <hr> -->
+      <div class="icon-links">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-github"></i>
+        <i class="fab fa-linkedin"></i>
+      </div>
+    <!-- </div> -->
+    {% include goto-next.html %}
+  </div>
+  
+  
+  <div class="inspire d-flex row justify-content-between px-5">
+    <h1 id="design">Design.</h1>
+    <h1 id="develop">Develop.</h1>
+    <h1 id="create">Create.</h1>
+  </div>
+  <hr>
+</div>
+
+<div class="page page-2">
+  <h2>My Services</h2>
+  <div class="services-text d-flex row justify-content-around">
+    {% include card-services.html content="<h4>Build Websites/Web Apps</h4>" %}
+    {% include card-services.html content="<h4>Build WeChat Mini Programs</h4>" %}
+  </div>
+  {% include goto-next.html %}
+  <hr>
+</div>
+
+<div class="page page-3">
+  <h2>My Work</h2>
+  {% include goto-next.html %}
+  <hr>
+</div>
+
+<div class="page page-4">
+  <h2>About</h2>
+  
+  <div class="about-info">
+    
+    <div class="about-left-col">
+      <img src="#" alt="My Face">
+      <div class="contact-info d-flex flex-column">
+        <p>Contact Me</p>
+        <a href="#">contact@creatorchristine.com</a>
+        <a href="#">send a quick message</a>
+      </div>
+    </div>
+    
+    <div class="about-text">
+      <p>"Christine is an enthusiastic programmer. She is self-driven "</p>
+    </div>
+  </div>
+  <hr>
+</div>

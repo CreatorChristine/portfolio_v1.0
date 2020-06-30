@@ -1,0 +1,12 @@
+.service {
+    background-color: gray;
+    height: 60vh;
+    min-width: 30vw;
+    margin: 8rem 0;
+    padding: 0 2rem;
+    text-align: center;
+    align-items: center;
+    border-radius: 8%;
+    display: grid;
+    grid-column: 1fr 1fr auto;
+}
