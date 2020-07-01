@@ -3,6 +3,7 @@ $dark-text: #395E7D;
 
 .page {
     height: 100vh;
+    position: relative;
     h2 {
         display: flex;
         justify-content: center;
@@ -43,6 +44,7 @@ $dark-text: #395E7D;
         width: 100%;
         align-items: center;
         font-size: 2rem;
+        text-align: center;
         #design {
             color: $dark-text;
             opacity: 0.38;

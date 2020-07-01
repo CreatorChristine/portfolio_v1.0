@@ -2,8 +2,27 @@
     height: 2rem;
     width: 2rem;
     position: absolute;
-    top: 97.5%;
+    top: 95.5%;
     background: rgba(255, 249, 227, 1);
     border-radius: 3px;
-    transform: rotate(-45deg);
+    transform: rotate(45deg);
+}
+
+.slider_scroll {
+    bottom: 12px;
+    right: 12px;
+    border: solid black;
+    border-width: 0 2px 2px 0;
+    border-radius: 1.2px;
+    display: inline-block;
+    padding: 0.4rem;
+    position: absolute;
+    animation: scroll 1.5s infinite;
+}
+
+
+@keyframes scroll {
+    0% { bottom: 12px; right: 12px; }
+    50% { bottom: 8px; right: 8px; }
+    100% { bottom: 12px; right: 12px; }
 }
