@@ -12,11 +12,11 @@
 
 .page-1 .banner hr { color: #2F3D4C; }
 
-.page-1 .inspire { height: 15vh; width: 100%; align-items: center; font-size: 2rem; text-align: center; }
+.page-1 .inspire { height: 15vh; width: 100%; align-items: center; font-size: 2rem; text-align: center; margin: 1rem auto; }
 
 .page-1 .inspire #design { color: #395E7D; opacity: 0.38; letter-spacing: 0.06em; }
 
-.page-1 .inspire #develop { color: #395E7D; opacity: 0.6; letter-spacing: 0.166em; }
+.page-1 .inspire #develop { color: #395E7D; opacity: 0.6; letter-spacing: 0.166em; position: unset; transform: translateX(1.2rem); }
 
 .page-1 .inspire #create { color: #395E7D; opacity: 1; letter-spacing: 0.06em; }
 
@@ -24,7 +24,7 @@
 
 .page-2 .services-text { display: grid; grid-column: 1fr 1fr auto; }
 
-.goto-next { height: 2rem; width: 2rem; position: absolute; top: 95.5%; background: #fff9e3; border-radius: 3px; transform: rotate(45deg); }
+.goto-next { height: 2rem; width: 2rem; position: absolute; top: 97.5%; left: 50%; background: #fff9e3; border-radius: 3px; transform: rotate(45deg); }
 
 .slider_scroll { bottom: 12px; right: 12px; border: solid black; border-width: 0 2px 2px 0; border-radius: 1.2px; display: inline-block; padding: 0.4rem; position: absolute; animation: scroll 1.5s infinite; }
 
