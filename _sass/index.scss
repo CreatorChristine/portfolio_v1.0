@@ -104,5 +104,19 @@ $dark-text: #395E7D;
     margin: 3rem 8rem;
     align-items: center;
     justify-content: center;
-    
+    .skill-cards {
+        display: grid;
+        margin: 2rem auto;
+        max-width: 100%;
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .skill-card {
+        margin: 1rem auto;
+        svg {
+            height: 46px;
+        }
+        img {
+            height: 46px;
+        }
+    }
 }

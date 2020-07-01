@@ -36,6 +36,14 @@
 
 .page-4 { margin: 3rem 8rem; align-items: center; justify-content: center; }
 
+.page-4 .skill-cards { display: grid; margin: 2rem auto; max-width: 100%; grid-template-columns: repeat(6, 1fr); }
+
+.page-4 .skill-card { margin: 1rem auto; }
+
+.page-4 .skill-card svg { height: 46px; }
+
+.page-4 .skill-card img { height: 46px; }
+
 .goto-next { height: 2rem; width: 2rem; position: fixed; top: 83vh; left: 49%; background: #fff9e3; border-radius: 3px; transform: rotate(45deg); }
 
 .slider_scroll { bottom: 12px; right: 12px; border: solid black; border-width: 0 2px 2px 0; border-radius: 1.2px; display: inline-block; padding: 0.4rem; position: absolute; animation: scroll 1.5s infinite; }
