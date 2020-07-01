@@ -63,10 +63,6 @@ section { margin-bottom: 64px; }
 @media screen and (min-width: 70em) { .sidebar-is-active .content { right: -400px; left: 400px; padding-right: 400px; } }
 
 /* sidebar */
-.sidebar { position: fixed; z-index: 1; top: 0; left: 0; bottom: 0; width: 280px; background-color: #f8f8f8; box-shadow: 0 0 128px 0 inset rgba(128, 128, 128, 0.2); }
-
-@media screen and (min-width: 70em) { .sidebar { width: 400px; } }
-
 /* navigation */
 .navigation { margin: 96px 32px; }
 
