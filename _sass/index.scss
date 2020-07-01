@@ -2,8 +2,9 @@ $dark-blue: #2F3D4C;
 $dark-text: #395E7D;
 
 .page {
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
+    justify-content: center;
     h2 {
         display: flex;
         justify-content: center;
@@ -20,7 +21,6 @@ $dark-text: #395E7D;
         background-size: cover;
         background-position: center;
         height: 85vh;
-        position: relative;
         width: 100%;
         #name {
             color: $dark-blue;
@@ -71,7 +71,38 @@ $dark-text: #395E7D;
     .services-text {
         display: grid;
         grid-column: 1fr 1fr auto;
-
     }
 }
 
+.page-3 {
+    margin: 3rem 8rem;
+    align-items: center;
+    justify-content: center;
+    .projects {
+        display: grid;
+        max-width: 100%;
+        margin: 2rem auto;
+        a {
+            margin: 1rem auto;
+            box-shadow: 6px -6px 0 #bdb990ee;
+            border: solid #BDB990 1px;
+            // height: 16rem;
+            // width: 20rem;
+            // overflow: hidden;
+            // background-size: contain;
+        }
+    }
+    @media (min-width: 600px) {
+        .projects { grid-template-columns: repeat(2, 1fr); }        
+    }
+    @media (min-width: 900px) {
+        .projects { grid-template-columns: repeat(3, 1fr); }
+    }
+}
+
+.page-4 {
+    margin: 3rem 8rem;
+    align-items: center;
+    justify-content: center;
+    
+}
