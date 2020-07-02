@@ -1,8 +1,8 @@
-.page { height: 100vh; position: relative; }
+.page { min-height: 100vh; position: relative; justify-content: center; }
 
 .page h2 { display: flex; justify-content: center; letter-spacing: 0.035em; color: #395E7D; }
 
-.page-1 .banner { background: url("https://res.cloudinary.com/demyxeys9/image/upload/v1593502347/portfolio/kelly-sikkema-mdADGzyXCVE-unsplash_ivylim.jpg"), rgba(231, 226, 167, 0.6); background-blend-mode: overlay, overlay, normal; background-size: cover; background-position: center; height: 85vh; position: relative; width: 100%; }
+.page-1 .banner { background: url("https://res.cloudinary.com/demyxeys9/image/upload/v1593502347/portfolio/kelly-sikkema-mdADGzyXCVE-unsplash_ivylim.jpg"), rgba(231, 226, 167, 0.6); background-blend-mode: overlay, overlay, normal; background-size: cover; background-position: center; height: 85vh; width: 100%; }
 
 .page-1 .banner #name { color: #2F3D4C; }
 
@@ -24,9 +24,33 @@
 
 .page-2 .services-text { display: grid; grid-column: 1fr 1fr auto; }
 
-.goto-next { height: 2rem; width: 2rem; position: absolute; top: 97.5%; left: 50%; background: #fff9e3; border-radius: 3px; transform: rotate(45deg); }
+.page-3 { margin: 3rem 8rem; align-items: center; justify-content: center; }
+
+.page-3 .projects { display: grid; max-width: 100%; margin: 2rem auto; }
+
+.page-3 .projects a { margin: 1rem auto; box-shadow: 6px -6px 0 #bdb990ee; border: solid #BDB990 1px; }
+
+@media (min-width: 600px) { .page-3 .projects { grid-template-columns: repeat(2, 1fr); } }
+
+@media (min-width: 900px) { .page-3 .projects { grid-template-columns: repeat(3, 1fr); } }
+
+.page-4 { margin: 3rem 8rem; align-items: center; justify-content: center; }
+
+.page-4 .skill-cards { display: grid; margin: 2rem auto; max-width: 100%; grid-template-columns: repeat(6, 1fr); }
+
+.page-4 .skill-card { margin: 1rem auto; }
+
+.page-4 .skill-card svg { height: 46px; }
+
+.page-4 .skill-card img { height: 46px; }
+
+.goto-next { height: 2rem; width: 2rem; position: fixed; top: 83vh; left: 49%; background: #fff9e3; border-radius: 3px; transform: rotate(45deg); z-index: 5; }
+
+.goto-next:hover { cursor: pointer; }
 
 .slider_scroll { bottom: 12px; right: 12px; border: solid black; border-width: 0 2px 2px 0; border-radius: 1.2px; display: inline-block; padding: 0.4rem; position: absolute; animation: scroll 1.5s infinite; }
+
+section { min-height: 800px; }
 
 @keyframes scroll { 0% { bottom: 12px;
     right: 12px; }
@@ -38,5 +62,55 @@
 .service { background-color: gray; height: 60vh; min-width: 30vw; margin: 8rem 0; padding: 0 2rem; text-align: center; align-items: center; border-radius: 8%; display: grid; grid-column: 1fr 1fr auto; }
 
 footer { background: rgba(189, 185, 144, 0.5); color: white; text-align: center; font-size: 1rem; padding: 0.2rem; }
+
+/* resets */
+*, *:before, *:after { margin: 0; padding: 0; box-sizing: border-box; }
+
+/* typography */
+body { font: normal 20px/32px 'Noto Sans', sans-serif; color: black; }
+
+h1, h2 { font-size: 40px; font-weight: normal; line-height: 32px; margin: 0 0 32px 0; }
+
+p { margin-bottom: 32px; }
+
+a { color: black; text-decoration: none; }
+
+/* content */
+.content { position: absolute; width: 100%; z-index: 2; top: 0; right: 0; left: 0; background-color: white; transition: all ease-in-out .3s; }
+
+.content-inner { width: 100%; }
+
+.sidebar-is-active .content { right: -280px; left: 280px; }
+
+@media screen and (min-width: 70em) { .sidebar-is-active .content { right: -400px; left: 400px; padding-right: 30%; } }
+
+/* sidebar */
+.sidebar { position: fixed; z-index: 1; top: 0; left: 0; bottom: 0; width: 20%; background-color: #f8f8f8; box-shadow: 0 0 128px 0 inset rgba(128, 128, 128, 0.2); }
+
+@media screen and (min-width: 70em) { .sidebar { width: 30%; } }
+
+/* navigation */
+.navigation { margin: 96px 32px; }
+
+.navigation ul { padding: 0 6rem; }
+
+.navigation ul li { list-style: none; }
+
+.navigation ul li a { display: block; padding: 16px 0; }
+
+/* navigation trigger */
+.navigation-trigger { position: fixed; z-index: 3; top: 32px; left: 32px; width: 32px; height: 32px; }
+
+.navigation-trigger:hover { cursor: pointer; }
+
+.navigation-trigger .line { position: absolute; display: block; width: 32px; height: 4px; background-color: black; transition: transform .3s; }
+
+.navigation-trigger .line-1 { top: 10px; }
+
+.navigation-trigger .line-2 { top: 18px; }
+
+.sidebar-is-active .navigation-trigger .line { transform: translateX(19rem); }
+
+#dark-mode { position: fixed; z-index: 3; top: 1.6rem; right: 1.6rem; font-size: 2rem; -webkit-transform: scaleX(-1); transform: scaleX(-1); rotate: 20deg; }
 
 /*# sourceMappingURL=styles.css.map */
