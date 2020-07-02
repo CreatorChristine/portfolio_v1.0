@@ -13,11 +13,6 @@ $dark-text: #395E7D;
     }
 }
 
-#dark-mode {
-    -webkit-transform: scaleX(-1);
-    transform: scaleX(-1); rotate: (20deg);
-    z-index: 3;
-}
 
 .page-1 {
     .banner {
