@@ -7,6 +7,10 @@
     background: rgba(255, 249, 227, 1);
     border-radius: 3px;
     transform: rotate(45deg);
+    z-index: 5;
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 .slider_scroll {
@@ -20,6 +24,11 @@
     position: absolute;
     animation: scroll 1.5s infinite;
 }
+
+section {
+    min-height: 800px;
+}
+
 
 
 @keyframes scroll {

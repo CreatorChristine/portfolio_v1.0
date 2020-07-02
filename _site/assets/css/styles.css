@@ -44,9 +44,13 @@
 
 .page-4 .skill-card img { height: 46px; }
 
-.goto-next { height: 2rem; width: 2rem; position: fixed; top: 83vh; left: 49%; background: #fff9e3; border-radius: 3px; transform: rotate(45deg); }
+.goto-next { height: 2rem; width: 2rem; position: fixed; top: 83vh; left: 49%; background: #fff9e3; border-radius: 3px; transform: rotate(45deg); z-index: 5; }
+
+.goto-next:hover { cursor: pointer; }
 
 .slider_scroll { bottom: 12px; right: 12px; border: solid black; border-width: 0 2px 2px 0; border-radius: 1.2px; display: inline-block; padding: 0.4rem; position: absolute; animation: scroll 1.5s infinite; }
+
+section { min-height: 800px; }
 
 @keyframes scroll { 0% { bottom: 12px;
     right: 12px; }
