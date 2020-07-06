@@ -1,3 +1,13 @@
+:root {
+    --background: rgb(255, 255, 248);
+    --color: #2F3D4C;
+}
+
+body {
+    background-color: var(--background);
+    color: var(--color);
+}
+
 #dark-mode {
     position: fixed;
     z-index: 3;

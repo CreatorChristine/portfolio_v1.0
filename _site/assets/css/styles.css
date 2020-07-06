@@ -61,7 +61,7 @@ section { min-height: 800px; }
 
 .service { background-color: gray; height: 60vh; min-width: 30vw; margin: 8rem 0; padding: 0 2rem; text-align: center; align-items: center; border-radius: 8%; display: grid; grid-column: 1fr 1fr auto; }
 
-footer { background: rgba(189, 185, 144, 0.5); color: white; text-align: center; font-size: 1rem; padding: 0.2rem; }
+footer { background: #BDB990; color: rgba(0, 0, 0, 0.8); text-align: center; font-size: 1rem; padding: 0.2rem; z-index: 1; }
 
 /* resets */
 *, *:before, *:after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -110,6 +110,10 @@ a { color: black; text-decoration: none; }
 .navigation-trigger .line-2 { top: 18px; }
 
 .sidebar-is-active .navigation-trigger .line { transform: translateX(19rem); }
+
+:root { --background: rgb(255, 255, 248); --color: #2F3D4C; }
+
+body { background-color: var(--background); color: var(--color); }
 
 #dark-mode { position: fixed; z-index: 3; top: 1.6rem; right: 1.6rem; font-size: 2rem; -webkit-transform: scaleX(-1); transform: scaleX(-1); rotate: 20deg; }
 

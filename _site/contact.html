@@ -1,0 +1,36 @@
+		<meta name="description" content="Natural Language Form with custom text input and drop-down lists" />
+		<meta name="keywords" content="Natural Language UI, sentence form, text input, contenteditable, html5, css3, jquery" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+	</head>
+	<body class="nl-blurred">
+		<div class="container demo-1">
+			<div class="main clearfix">
+				<form id="nl-form" class="nl-form">
+                    Hey Christine,
+                    <br /> My name is <input type="text" value="" placeholder="your name" data-subline="For example: <em>John Smith</em> or <em>Jane Doe</em>"/>
+                    .  I'd love to 
+                    <select>
+                        <option value="1" selected>work with</option>
+						<option value="2">get in touch with</option>
+						<option value="3">get more info from</option>
+                    </select>
+                    <br /> you about <input type="text" value="" placeholder="your name" data-subline="For example: <em>John Smith</em> or <em>Jane Doe</em>"/>
+                     .
+                    <br />  You can reach me at
+                    <br /> <input type="text" value="" placeholder="your contact info" data-subline="For example: <em>email</em> or <em>phone number</em>"/>
+                    .
+					<div class="nl-submit-wrap">
+						<button class="nl-submit" type="submit">Send Message</button>
+					</div>
+					<div class="nl-overlay"></div>
+				</form>
+			</div>
+		</div><!-- /container -->
+		<script src="js/nlform.js"></script>
+		<script>
+			var nlform = new NLForm( document.getElementById( 'nl-form' ) );
+		</script>
+	</body>
